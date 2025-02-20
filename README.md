@@ -28,3 +28,10 @@ The replenishment of majority of raw materials is done on weekly basis and since
 
 # fulfilment_center_info.csv: Contains information for each fulfilment center
 
+| Variable|Definition |
+|---|---|
+| center_id | Unique ID for fulfillment center |
+| city_code | Unique code for city |
+| region_code | Unique code for region|
+| center_type | Anonymized center type |
+| op_area | Area of operation (in km^2) |
