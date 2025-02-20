@@ -43,3 +43,6 @@ The replenishment of majority of raw materials is done on weekly basis and since
 | meal_id | Unique ID for the meal |
 | category | Type of meal (beverages/snacks/soups….) |
 | cuisine | Meal cuisine (Indian/Italian/…)|
+
+# Evaluation Metric
+The evaluation metric for this competition is 100*RMSLE where RMSLE is Root of Mean Squared Logarithmic Error across all entries in the test set.
