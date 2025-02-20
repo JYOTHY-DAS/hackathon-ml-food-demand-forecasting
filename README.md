@@ -1,2 +1,2 @@
-# hackathon-ml-food-demand-forecasting
-This repository contains code and resources for the Genpact machine learning hackathon project on Food Demand Forecasting. It covers data preprocessing, EDA, feature engineering, model building, and evaluation to predict food demand accurately. The goal is to develop a robust model to optimize inventory and reduce food wastage.
+# Introduction
+#### This project tackles the critical challenge of demand forecasting for a food delivery service.  Accurate predictions are essential for managing perishable inventory, minimizing waste, and avoiding stockouts that could drive customers away.  Using a real-world dataset, this repository provides a practical experience in demand forecasting.
