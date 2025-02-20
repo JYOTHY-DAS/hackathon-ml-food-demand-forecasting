@@ -12,7 +12,7 @@ The replenishment of majority of raw materials is done on weekly basis and since
 # Data dictionary
 
 ## Weekly Demand data (train.csv): Contains the historical demand data for all centers, test.csv contains all the following features except the target variable.
-<div style="display: flex; justify-content: center;">
+<div style="center;">
 | Variable|Definition |
 |---|---|
 | id | Unique ID |
