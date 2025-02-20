@@ -1,7 +1,7 @@
 # Introduction
 This project tackles the critical challenge of demand forecasting for a food delivery service.  Accurate predictions are essential for managing perishable inventory, minimizing waste, and avoiding stockouts that could drive customers away.  Using a real-world dataset, this repository provides a practical experience in demand forecasting.
-# Link to hackathon
-### [Click here](https://www.analyticsvidhya.com/datahack/contest/genpact-machine-learning-hackathon-1/)
+#### Link to hackathon
+##### [Click here](https://www.analyticsvidhya.com/datahack/contest/genpact-machine-learning-hackathon-1/)
 # Problem statement
 Your client is a meal delivery company which operates in multiple cities. They have various fulfillment centers in these cities for dispatching meal orders to their customers. The client wants you to help these centers with demand forecasting for upcoming weeks so that these centers will plan the stock of raw materials accordingly.
 
