@@ -13,6 +13,7 @@ The replenishment of majority of raw materials is done on weekly basis and since
 
 ## Weekly Demand data (train.csv): Contains the historical demand data for all centers, test.csv contains all the following features except the target variable.
 <p align="center">
+  <table>
 | Variable|Definition |
 |---|---|
 | id | Unique ID |
@@ -24,6 +25,7 @@ The replenishment of majority of raw materials is done on weekly basis and since
 | emailer_for_promotion | Emailer sent for promotion of meal |
 | homepage_featured | Meal featured at homepage |
 | num_orders | (Target) Orders Count |
+  </table>
 </p>
 # fulfilment_center_info.csv: Contains information for each fulfilment center
 
