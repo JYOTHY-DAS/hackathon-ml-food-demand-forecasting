@@ -9,6 +9,19 @@ The replenishment of majority of raw materials is done on weekly basis and since
 - Historical data of demand for a product-center combination (Weeks: 1 to 145)
 - Product(Meal) features such as category, sub-category, current price and discount
 - Information for fulfillment center like center area, city information etc.
-#
-#
+# Data dictionary
+
+## Weekly Demand data (train.csv): Contains the historical demand data for all centers, test.csv contains all the following features except the target variable
+| Variable|Definition |
+|---|---|
+| id | Unique ID |
+| week | Week No |
+| center_id | Unique ID for fulfillment center |
+| meal_id | Unique ID for Meal |
+| checkout_price| Final price including discount, taxes & delivery charges |
+| base_price | Base price of the meal |
+| emailer_for_promotion | Emailer sent for promotion of meal |
+| homepage_featured | Meal featured at homepage |
+| num_orders | (Target) Orders Count |
+# fulfilment_center_info.csv: Contains information for each fulfilment center
 
