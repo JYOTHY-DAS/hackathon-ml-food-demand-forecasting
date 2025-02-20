@@ -8,3 +8,5 @@ The replenishment of majority of raw materials is done on weekly basis and since
 - Historical data of demand for a product-center combination (Weeks: 1 to 145)
 - Product(Meal) features such as category, sub-category, current price and discount
 - Information for fulfillment center like center area, city information etc.
+# Link to hackathon
+[Click here](https://www.analyticsvidhya.com/datahack/contest/genpact-machine-learning-hackathon-1/)
