@@ -35,3 +35,11 @@ The replenishment of majority of raw materials is done on weekly basis and since
 | region_code | Unique code for region|
 | center_type | Anonymized center type |
 | op_area | Area of operation (in km^2) |
+
+# meal_info.csv: Contains information for each meal being served
+
+| Variable|Definition |
+|---|---|
+| meal_id | Unique ID for the meal |
+| category | Type of meal (beverages/snacks/soups….) |
+| cuisine | Meal cuisine (Indian/Italian/…)|
