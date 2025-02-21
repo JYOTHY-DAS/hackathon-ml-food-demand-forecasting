@@ -6,37 +6,28 @@
 \usepackage{caption}
 \usepackage{subcaption}
 \usepackage{multicol}
-
+\usepackage{comment}
 
 \begin{document}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Front page
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\title{Forecasting Farmer Contributions to PMFBY (Pradhan Mantri Fasal Bima Yojana) \\ Using Historical Data}
+\title{Food demand forecasting}
 
-\author{Submitted by\\ Jyothy Das, Swaraj Gopal, and Vishnu Premji}
-\date{25/01/2025}
+\author{ Jyothy Das}
+\date{21/02/2025}
 \maketitle
 
 \vspace{30pt}
 \begin{center}
-A project report submitted to ICT Academy of Kerala\\
-in partial fulfillment of the requirements\\
-for the certification of\\
-\vspace{45pt}
-{\LARGE CERTIFIED SPECIALIST}\\
-\vspace{10pt}
-{\LARGE IN}\\
-\vspace{10pt}
-{\LARGE DATA SCIENCE \& ANALYTICS}
+A project report on\\
+Genpact machine learning hackathon project\\
+'food demand forecasting'.\\
 \end{center}
 
 \vspace{20pt}
 
-\begin{center}
-\includegraphics[width=5cm]{logo.png} % Replace with actual logo file
-\end{center}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Table of Contents, List of Figures, and List of Tables
@@ -50,17 +41,19 @@ for the certification of\\
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newpage
 \section{Abstract}
+\begin{comment}
 This research aims to develop a predictive model for farmers' contributions to the Pradhan Mantri Fasal Bima Yojana (PMFBY), 
 an agricultural insurance scheme in India. Utilizing historical data on crop insurance coverage, the study will identify patterns and trends in farmer contributions, 
 considering factors like crop type, state policies, and premium rates. The analysis will inform the optimization of government subsidies to maximize coverage 
 while ensuring equitable access. Furthermore, the research will enhance transparency and informed decision-making in policy design. 
 The final model will be deployed as an interactive web application using Flask, enabling stakeholders to explore predictions and their implications dynamically.
-
+\end{comment}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Problem Definition
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Problem Definition}
 \subsection{Overview }
+\begin{comment}
 The Pradhan Mantri Fasal Bima Yojana (PMFBY) is a flagship agricultural insurance scheme introduced by the Government of India 
 to protect farmers from crop losses due to natural calamities. While the scheme has positively impacted agricultural risk management, several challenges remain, 
 particularly in understanding and optimizing farmers' contributions. With participation varying widely across regions and crop types, policymakers face difficulties 
@@ -69,15 +62,18 @@ and to provide actionable insights for improving the scheme's efficiency.
 \vspace{5pt}
 By analyzing historical data on crop insurance coverage, the study aims to uncover key trends and dependencies, which will aid in designing policies that better align
  with farmers' financial capacity and agricultural risk profiles. Through the development of a predictive model, this research seeks to bridge the gap between data insights and practical policy-making for PMFBY.
+\end{comment}
 
 \subsection{Problem statement}
+\begin{comment}
 This project aims to predict the farmers' contribution to PMFBY using historical data on crop insurance coverage. The outcome of this analysis will provide insights into 
 patterns in farmers' contributions and help optimize subsidy allocation policies. 
-
+\end{comment}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Introduction
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Introduction}
+\begin{comment}
 Agriculture is the backbone of India’s economy, supporting nearly half of the nation’s population. However, farmers in India face significant risks due to unpredictable 
 weather patterns, natural calamities, and market fluctuations, which threaten both their livelihoods and national food security. To address these challenges, the 
 Government of India introduced the Pradhan Mantri Fasal Bima Yojana (PMFBY) in 2016, an ambitious crop insurance scheme aimed at protecting farmers from 
@@ -100,11 +96,13 @@ web application using Flask, enabling stakeholders to explore predictions dynami
 
 \vspace{5pt}
 This study not only contributes to the optimization of PMFBY but also demonstrates the potential of data analytics in addressing critical challenges in agriculture and policymaking.
-
+\end{comment}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Literature Survey
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Literature Survey}
+
+\begin{comment}
 The literature surrounding the Pradhan Mantri Fasal Bima Yojana (PMFBY) and related crop insurance schemes highlights the critical need for effective risk mitigation 
 strategies in the Indian agricultural sector. PMFBY, launched in 2016, aims to provide financial support to farmers facing crop loss due to unforeseen events such as 
 droughts, floods, and pests. By offering subsidized insurance premiums, the scheme has played a pivotal role in stabilizing farmers' incomes and reducing their 
@@ -132,11 +130,14 @@ and policy implications. Few studies have focused on integrating predictive mode
 This research aims to address these gaps by developing a predictive model for farmers' contributions to PMFBY. By leveraging historical data on crop insurance coverage and 
 deploying the model through a Flask-based web application, the study seeks to provide actionable insights for subsidy optimization and equitable policy design. 
 Furthermore, the use of advanced machine learning techniques and robust evaluation metrics ensures the reliability and applicability of the findings to real-world scenarios.
+\end{comment}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Methodology
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Methodology}
 \subsection{Data Collection}
+
+\begin{comment}
 The dataset used in this study was sourced from Kaggle, a popular platform for open-source datasets. It contains historical records related to farmer contributions under the 
 Pradhan Mantri Fasal Bima Yojana (PMFBY), including details on premium rates, crop types, insured areas, and state-wise participation. After an extensive search, no prior studies 
 or projects were found using this specific dataset, making this research a novel contribution to understanding farmer participation trends in PMFBY. 
@@ -265,8 +266,11 @@ Farmers are eligible for compensation when the actual yield falls below the Thre
 \end{itemize}
 \end{itemize}
 
+\end{comment}
 %%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Data Characteristics}
+\begin{comment}
+
 \vspace{5pt}
 \textbf{Size:} The dataset includes district-level enrollment and coverage data, which covers a large number of records across various districts, crops, and states. 
 The data spans several years, beginning from 2018, and continues up to the Rabi 2022-23 season. There are 29999 rows and 62 columns. Thus, the dataset implies data records of 29999 incidents w.r.t 62 features which are taken.
@@ -274,24 +278,33 @@ The data spans several years, beginning from 2018, and continues up to the Rabi 
 
 \textbf{Time span:} The data covers the period from the introduction of the PMFBY scheme in 2018 up to February 2023, ensuring a wide temporal range for analysis. This includes multiple agricultural seasons (Kharif, Rabi), allowing for seasonal comparisons.
 \vspace{5pt}
+\end{comment}
 
 \textbf{Data types:}
+\begin{comment}
+
 \begin{itemize}
 \item{Integer (int64): Used for categorical variables like IDs (e.g., sssyID, seasonCode, stateCode) and numerical values (e.g., year, schemeCode).}
 \item{Float (float64): Used for numerical variables such as sumInsured, premiumRate, stateShare, and goiShare.}
 \item{Object (object): Used for textual data, including categorical variables like seasonName, stateName, cropName, and insurance company details.}
 \item{Boolean (bool): Used for flags, such as whether a record has specific characteristics (e.g., isOfflineChallan).}
 \end{itemize}
+\end{comment}
 \vspace{5pt}
 
 \textbf{Non-null Counts: }
+\begin{comment}
 All columns in the dataset have 29999 non-null entries, indicating that the dataset does not have missing values for the variables in question. This suggests that the data has been adequately prepared and cleaned for analysis.
 \vspace{5pt}
+\end{comment}
 
-\textbf{Handling Missing Values: }There are no missing values, as all 29,999 rows are complete.
+\begin{comment}
+\textbf{Missing Values: }There are no missing values, as all 29,999 rows are complete.
 \vspace{5pt}
+\end{comment}
 %%%%%%%%%%%%%%%%%%%%%
 \subsection{Data Transformation}
+\begin{comment}
 \subsubsection{Data Synchronization: } Efforts have been made to synchronize the state and district names throughout the dataset, ensuring a uniform format.
 \subsubsection{Column Removal}
 
@@ -362,6 +375,8 @@ To enhance clarity and improve readability, several columns were renamed to more
 
 
 \subsubsection{}
+
+\end{comment}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 							%Model development
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
