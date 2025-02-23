@@ -14,10 +14,9 @@
 
 \begin{document}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Front page
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\title{Food demand forecasting}
+%%%%%%%%%%%%%%%%%%%%%%                Front page               %%%%%%%%%%%%%%%%%%%%%%%
+
+\title{\textbf{Food Demand Forecasting}}
 
 \author{ Jyothy Das}
 \date{21/02/2025}
@@ -30,38 +29,76 @@ Genpact machine learning hackathon project\\
 'Food demand forecasting'.\\
 \end{center}
 
-\vspace{20pt}
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Table of Contents, List of Figures, and List of Tables
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%**********************************************************************************************************************%
+
+
+
+%%%%%%%%%%%%%%%%%     Table of Contents, List of Figures, and List of Tables   %%%%%%%%%%%%%%
+\newpage
 \tableofcontents
+\newpage
 \listoffigures
+\newpage
 \listoftables
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Abstract
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%**********************************************************************************************************************%
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%                                Abstract                       %%%%%%%%%%%%%%%%%%%%
 \newpage
 \section{Abstract}
-Accurate demand forecasting is critical for meal delivery companies to optimize procurement and staffing decisions. This project aims to predict the demand for meals across multiple fulfillment centers for the next 10 weeks using historical order data, meal characteristics, and center-specific attributes. 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Problem Definition
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Accurate demand forecasting is critical for meal delivery companies to optimize procurement and staffing decisions.
+ This project aims to predict the demand for meals across multiple fulfillment centers for the next 10 weeks using 
+historical order data, meal characteristics, and center-specific attributes. 
+%**********************************************************************************************************************%
+
+
+%%%%%%%%%%%%%%%%%%%%%%                     Problem Definition      %%%%%%%%%%%%%%%%%%%%
+\newpage
 \section{Problem Definition}
+Meal delivery companies operate in a dynamic and competitive market where efficient inventory and workforce
+ management are crucial for profitability and customer satisfaction. A key challenge is accurately forecasting the 
+demand for various meals at different fulfillment centers to ensure proper stock levels while minimizing waste due 
+to perishable ingredients. Additionally, staffing decisions depend on anticipated order volumes, making demand 
+forecasting a critical aspect of operational planning.\\
+This project focuses on developing a machine learning-based solution to predict the number of orders for different 
+meal-center combinations over the next 10 weeks.
+
 \subsection{Overview }
+Underestimating demand may lead to stock shortages and customer dissatisfaction, whereas overestimating demand 
+can result in excessive inventory, food wastage, and increased operational costs.
+
+To address this challenge, the project involves analyzing historical order data (covering Weeks 1 to 145), meal-specific 
+details (category, sub-category, pricing, discount), and fulfillment center information (location, city, operational factors). 
+By training machine learning models on this data, the goal is to develop an accurate forecasting model that predicts 
+demand for the upcoming 10 weeks (Weeks 146-155). The insights gained from this model will support better decision-making
+ in procurement, inventory management, and staffing, ultimately improving operational efficiency and reducing waste.
 
 \subsection{Problem statement}
+Accurate demand forecasting is essential for meal delivery companies to ensure efficient procurement of raw materials
+ and optimal workforce allocation at fulfillment centers. Since raw materials are perishable and replenished on a weekly 
+basis, precise predictions of future demand can significantly reduce waste, control inventory costs, and improve service reliability.
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Introduction
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+This project aims to develop a machine learning-based forecasting model to predict the demand for different meal-center
+ combinations for the next 10 weeks (Weeks 146-155). The model will be trained using historical demand data (Weeks 1-145), 
+meal-specific attributes (such as category, sub-category, price, and discount), and fulfillment center information 
+(such as location and operational characteristics). The predictions generated will assist the company in making data-driven 
+decisions for procurement planning and workforce management, ultimately enhancing operational efficiency and customer satisfaction.
+
+%**********************************************************************************************************************%
+
+%%%%%%%%%%%%%%%%%%%%%                   % Introduction                    %%%%%%%%%%%%%%%%%%%
 \section{Introduction}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Literature Survey
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%**********************************************************************************************************************%
+
+
+%%%%%%%%%%%%%%%%%%%%                   Literature Survey                    %%%%%%%%%%%%%%%%%%%
 \section{Literature Survey}
 
 
@@ -70,14 +107,56 @@ Accurate demand forecasting is critical for meal delivery companies to optimize 
 \subsection{Key Findings and Gaps}
 
 \subsection{Relevance to Current Study}
+%**********************************************************************************************************************%
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Methodology
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%% 				Methodology			%%%%%%%%%%%%%%%%%%%%%
 \section{Methodology}
 \subsection{Data Collection}
 
 \subsubsection{Data Overview}
+%**********************************************************************************************************************%
+
+
+%%%%%%%%%%%%%%% 				EDA			%%%%%%%%%%%%%%%%%%%%%
+\section{Exploratory Data Analysis}
+\begin{itemize}
+\item{ meal id}
+- The distribution is uneven, with certain meal IDs having significantly higher demand than others.
+- Some meals are ordered frequently, while others have much lower demand.
+\item{ center id}
+- The distribution is somewhat uniform but shows some peaks, indicating that certain centers have more orders than others.
+- Some centers receive a significantly higher number of orders.
+\item{city code}
+- The distribution is not uniform, with a few city codes having notably higher order counts.
+- Some cities contribute more to the demand, indicating regional preferences.
+\item{ region code}
+- The distribution shows clear peaks, indicating that only a few regions dominate food demand.
+- Some regions may have significantly lower demand, possibly due to fewer service centers or population differences.
+\item{ op area (operational area of the center)}
+- Most centers operate in a mid-range operational area, with fewer in extreme small or large areas.
+- Centers with mid-range operational areas tend to have higher demand.
+\item{id}
+- Since the 'id's are unique, the grap appears uniformly distributed.
+- No specific insights can be drawn from this graph.
+\item{ week}
+- Demand slightly increased over time.
+\item{ checkout price}
+- There are distinct peaks at certain price points, indicating price clustering.
+- Some meals are frequently ordered at specific price ranges, showing customer price sensitivity.
+\item{base price}
+- Similar to checkout price, there are peaks at certain values 
+- This suggests price standardization for certain meals.
+\item{ emailer for promotion}
+- The majority of the values are 0, meaning most meals are not promoted via email.
+- A small percentage of meals are promoted, and their effectiveness can be further analyzed.
+\item{ homepage featured}
+- Similar to email promotions, most meals are not featured on the homepage.
+- A very small fraction of meals get featured, additional study is required to assess its influence on demand.
+\item{ num orders}
+- The distribution is highly skewed, with most meals having a low number of orders.
+- A small number of meals receive a very high number of orders, indicating popular items.
+\end{itemize}
 
 %%%%%%%%%%%%%%%%%%%%%%   Table 1 
 \begin{center}
@@ -100,7 +179,7 @@ Accurate demand forecasting is critical for meal delivery companies to optimize 
 \end{center}
 \bigskip % Add some vertical space
 
- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Table 2
+ %%%%%%%%%%%%%%%%%%%%%%   Table 2
 \begin{center}
 \begin{tabular}{||c|c||}
 \hline
@@ -120,7 +199,7 @@ Accurate demand forecasting is critical for meal delivery companies to optimize 
 \end{tabular}
 \end{center}
 \bigskip % Add some vertical space
- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Table 3
+ %%%%%%%%%%%%%%%%%%%%%  Table 3
 \begin{center}
 \begin{tabular}{||c|c||}
 \hline
